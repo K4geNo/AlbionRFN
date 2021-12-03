@@ -1,0 +1,7 @@
+{
+  "name": "AlbionRFN",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
