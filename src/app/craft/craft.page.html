@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Craft</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label color="danger">Item de Criação</ion-label>
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label >Recurso</ion-label>
+      <ion-select placeholder="selecionar" name="recurso" id="recurso">
+        <ion-select-option value="betula">(T2)</ion-select-option>
+        <ion-select-option value="castanheira">(T3)</ion-select-option>
+        <ion-select-option value="pinho">(T4)</ion-select-option>
+        <ion-select-option value="pinho1">(T4).1</ion-select-option>
+        <ion-select-option value="pinho2">(T4).2</ion-select-option>
+        <ion-select-option value="pinho3">(T4).3</ion-select-option>
+        <ion-select-option value="cedro">(T5)</ion-select-option>
+        <ion-select-option value="cedro1">(T5).1</ion-select-option>
+        <ion-select-option value="cedro2">(T5).2</ion-select-option>
+        <ion-select-option value="cedro3">(T5).3</ion-select-option>
+        <ion-select-option value="carvalho">(T6)</ion-select-option>
+        <ion-select-option value="carvalho1">(T6).1</ion-select-option>
+        <ion-select-option value="carvalho2">(T6).2</ion-select-option>
+        <ion-select-option value="carvalho3">(T6).3</ion-select-option>
+        <ion-select-option value="freixo">(T7)</ion-select-option>
+        <ion-select-option value="freixo1">(T7).1</ion-select-option>
+        <ion-select-option value="freixo2">(T7).2</ion-select-option>
+        <ion-select-option value="freixo3">(T7).3</ion-select-option>
+        <ion-select-option value="pauBranco">(T8)</ion-select-option>
+        <ion-select-option value="pau1">(T8).1</ion-select-option>
+        <ion-select-option value="pau2">(T8).2</ion-select-option>
+        <ion-select-option value="pau3">(T8).3</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label color="danger">Quantidade</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Troncos a utilizar</ion-label>
+      <ion-input type="text" name="quantTronco" placeholder="Digite a quantidade"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Tábuas a utilizar</ion-label>
+      <ion-input type="text" name="quantTabua" placeholder="Digite a quantidade"></ion-input>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label color="warning">Nível de Especialização</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Fama</ion-label>
+      <ion-input type="text" name="fama" placeholder="Spec 0-100"></ion-input>
+    </ion-item>
+  
+    <ion-button class="botao" id="criar" onclick="criar()">Criar</ion-button>
+  </ion-list>
+  
+
+</ion-content>

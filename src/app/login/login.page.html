@@ -1,0 +1,50 @@
+<ion-content fullscreen="true">
+    
+  <ion-segment (ionChange)="segmentChanged($event)" value="login">
+      <ion-segment-button value="login">
+          <ion-label>Login</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="register">
+          <ion-label>Registrar</ion-label>
+      </ion-segment-button>
+  </ion-segment>
+  
+
+  <swiper #swiper>
+      <ng-template swiperSlide>
+          <div class="ion-padding"> 
+              <span>Login</span>
+
+              <ion-item class="ion-margin-top">
+                  <ion-input type="email" [(ngModel)]="Email" placeholder="E-mail"></ion-input>
+              </ion-item>
+
+              <ion-item class="ion-margin-top">
+                  <ion-input type="password" [(ngModel)]="Password" placeholder="Senha"></ion-input>
+              </ion-item>
+
+              <ion-button class="ion-margin-top" (click)="login()" color="light" expand="block">Entrar</ion-button>
+          </div>
+      </ng-template>
+
+      <ng-template swiperSlide>
+          <div class="ion-padding"> 
+              <span>Registrar</span>
+              
+              <ion-item class="ion-margin-top">
+                  <ion-input type="text"placeholder="Nome"></ion-input>
+              </ion-item>
+
+              <ion-item class="ion-margin-top">
+                  <ion-input type="email" [(ngModel)]="Email" placeholder="E-mail"></ion-input>
+              </ion-item>
+
+              <ion-item class="ion-margin-top">
+                  <ion-input type="password" [(ngModel)]="Password" placeholder="Senha"></ion-input>
+              </ion-item>
+
+              <ion-button class="btn ion-margin-top" (click)="register()" color="light" expand="block">Registrar</ion-button> 
+          </div>
+      </ng-template>
+  </swiper>
+</ion-content>

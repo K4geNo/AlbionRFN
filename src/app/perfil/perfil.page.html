@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true" slot="fixed">
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-button (click)="logout()" class="btn">
+        Logout
+        <ion-icon slot="start" name="exit-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img src="../../assets/img/images.jpg">
+      </div>
+    </div>
+
+    <div class="card-body">
+
+      <div class="user-meta ion-text-center">
+        <h3 class="username">KageNo</h3>
+        <h5 class="nickname">@kageno</h5>
+      </div>
+      
+    </div>
+  </div>
+
+  <ion-grid>
+    <ion-row class="ion-padding-horizontal">
+      <ion-col>
+        <ion-item lines="none" class="ion-text-center">
+          <ion-icon name="trophy" color="primary"></ion-icon>
+          <ion-label>
+            57
+            <p>Troféus</p>
+          </ion-label>
+        </ion-item>
+        <ion-progress-bar value="0.5"></ion-progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

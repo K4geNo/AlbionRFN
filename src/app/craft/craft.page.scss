@@ -1,0 +1,57 @@
+ion-select::part(placeholder),
+ion-select::part(text) {
+  flex: 0 0 auto;
+}
+
+ion-select::part(placeholder) {
+    color: #a02020;
+    opacity: 1;
+}
+
+ion-select::part(placeholder)::first-letter {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+ion-select::part(text) {
+    color: #ffffff;
+}
+
+ion-select::part(icon) {
+    color: #ff0000;
+    opacity: 1;
+}
+
+ion-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+}
+
+.botao {
+    padding-top: 1rem;
+    padding-left: 8rem;
+    width: 15rem;
+}
+
+ion-toolbar {
+    --background: #1a1a1a !important;
+}
+
+ion-content {
+    --background: #1a1a1a !important;
+}
+
+ion-list {
+    background: #1a1a1a !important;
+}
+
+ion-item {
+    --background: #1a1a1a !important;
+}
+
+ion-label {
+    --background: #1a1a1a !important;
+}

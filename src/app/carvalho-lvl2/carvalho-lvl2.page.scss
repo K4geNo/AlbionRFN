@@ -1,0 +1,26 @@
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 60%;
+}
+
+table {
+    text-align: center;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+ion-toolbar {
+    color: white;
+}
+
+ion-content {
+    --background: #1a1a1a !important;
+}
+
+ion-card {
+    --background: #1a1a1a !important;
+}

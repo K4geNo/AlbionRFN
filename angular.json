@@ -14,6 +14,23 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "firebase",
+              "@angular/common/locales/fr",
+              "lodash/dropRight",
+              "@firebase/app",
+              "firebase/app",
+              "@firebase/database",
+              "@firebase/firestore",
+              "@firebase/functions",
+              "@firebase/performance",
+              "@firebase/remote-config",
+              "angularfire2",
+              "angularfire2/auth",
+              "angularfire2/database",
+              "angularfire2/firestore"
+            ],
             "outputPath": "www",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -171,6 +188,7 @@
     }
   },
   "cli": {
+    "analytics": "7a145075-7737-4243-8147-33813f4893c2",
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
